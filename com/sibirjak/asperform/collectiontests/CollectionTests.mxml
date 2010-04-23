@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:flexui="com.sibirjak.asperform.ui.*"
+	creationComplete="startTests()"
+	>
+
+    <mx:Script>
+        <![CDATA[
+            private function startTests() : void {
+            	
+            	flexUI.setMethodKey("add", "+  ");
+            	flexUI.setMethodKey("addFirst", "+A ");
+            	flexUI.setMethodKey("addLast", "Z+ ");
+            	flexUI.setMethodKey("iterate", "for");
+
+            	flexUI.setMethodKey("has", "?  ");
+
+            	flexUI.setMethodKey("remove", "-  ");
+            	flexUI.setMethodKey("removeFirst", "-A ");
+            	flexUI.setMethodKey("removeLast", "Z- ");
+            	
+            	flexUI.setMethodKey("hasKey", "?k ");
+            	flexUI.setMethodKey("removeKey", "-k ");
+
+                flexUI.setTestSuite(new AS3CommonsVSAS3Tests());
+                //flexUI.setTestSuite(new AS3CommonsTests());
+                //flexUI.setTestSuite(new PriorityQueueTests());
+                //flexUI.setTestSuite(new LinkedListTests());
+                //flexUI.setTestSuite(new SetTests());
+                //flexUI.setTestSuite(new MapTests());
+                //flexUI.setTestSuite(new BSTTests());
+                
+                flexUI.startTests();
+            }
+        ]]>
+    </mx:Script>
+
+	<flexui:FlexUI id="flexUI" width="100%" height="100%"/>
+	
+
+</mx:Application>
