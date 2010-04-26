@@ -1,6 +1,4 @@
 package com.sibirjak.asperform.ui {
-	import mx.controls.TextArea;
-
 	import com.sibirjak.asperform.EmptyTestCase;
 	import com.sibirjak.asperform.ResultEvent;
 	import com.sibirjak.asperform.TestCase;

@@ -48,6 +48,7 @@ package com.sibirjak.asperform.collectiontests {
 					}
 					break;
 
+				case "sorted":
 				case "add":
 				case "addFirst":
 				case "addLast":

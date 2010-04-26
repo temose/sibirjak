@@ -58,11 +58,23 @@ package com.sibirjak.asperform.collectiontests.flash {
 			}
 		}
 
+		public function test_hasKey() : void {
+			for (var i : uint = 0; i < _numItems; i++) {
+				_dictionary[_data[i]] !== undefined;
+			}
+		}
+
 		public function test_iterate() : void {
 			for (var i : uint = 0; i < iterations; i++) {
 				for (var key : * in _dictionary) {
 					_dictionary[key];
 				}
+			}
+		}
+
+		public function test_removeKey() : void {
+			for (var i : uint = 0; i < _numItems; i++) {
+				delete _dictionary[_data[i]];
 			}
 		}
 

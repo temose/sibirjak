@@ -23,7 +23,11 @@
             	flexUI.setMethodKey("hasKey", "?k ");
             	flexUI.setMethodKey("removeKey", "-k ");
 
-                flexUI.setTestSuite(new AS3CommonsVSAS3Tests());
+                flexUI.setTestSuite(new ArraySortedTests());
+                //flexUI.setTestSuite(new DictionaryTests());
+                //flexUI.setTestSuite(new ArrayTests());
+
+                //flexUI.setTestSuite(new AS3CommonsVSAS3Tests());
                 //flexUI.setTestSuite(new AS3CommonsTests());
                 //flexUI.setTestSuite(new PriorityQueueTests());
                 //flexUI.setTestSuite(new LinkedListTests());
