@@ -88,5 +88,12 @@ package com.sibirjak.asperform.collectiontests.flash {
 			}
 		}
 
+		public function test_sorted() : void {
+			for (var i : uint = 0; i < _numItems; i++) {
+				_array.push(_data[i]);
+				_array.sort();
+			}
+		}
+
 	}
 }
