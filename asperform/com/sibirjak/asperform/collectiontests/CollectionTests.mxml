@@ -26,7 +26,8 @@
             	flexUI.setMethodKey("hasKey", "?k ");
             	flexUI.setMethodKey("removeKey", "-k ");
 
-                flexUI.setTestSuite(new LinkedListRawTests());
+                flexUI.setTestSuite(new MapRawTests());
+                //flexUI.setTestSuite(new LinkedListRawTests());
                 
                 
                 //flexUI.setTestSuite(new ArraySortedTests());
