@@ -18,6 +18,7 @@
             	flexUI.setMethodKey("iterate", "for");
 
             	flexUI.setMethodKey("has", "?  ");
+            	flexUI.setMethodKey("first", "->A");
 
             	flexUI.setMethodKey("remove", "-  ");
             	flexUI.setMethodKey("removeFirst", "-A ");
@@ -26,10 +27,13 @@
             	flexUI.setMethodKey("hasKey", "?k ");
             	flexUI.setMethodKey("removeKey", "-k ");
 
-                flexUI.setTestSuite(new MapRawTests());
+                flexUI.setTestSuite(new OrderedMapRawTests());
+                //flexUI.setTestSuite(new HeapTests());
+                //flexUI.setTestSuite(new MapRawTests());
                 //flexUI.setTestSuite(new LinkedListRawTests());
                 
                 
+                //flexUI.setTestSuite(new TreapTests());
                 //flexUI.setTestSuite(new ArraySortedTests());
                 //flexUI.setTestSuite(new DictionaryTests());
                 //flexUI.setTestSuite(new ArrayTests());

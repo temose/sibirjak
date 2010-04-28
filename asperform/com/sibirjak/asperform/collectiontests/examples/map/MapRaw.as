@@ -29,16 +29,15 @@ package com.sibirjak.asperform.collectiontests.examples.map {
 			}
 		}
 
-		public function removeKey(key : *) : Boolean {
+		public function removeKey(key : *) : void {
 			if (key is String) {
-				if (stringMap[key] === undefined) return false;
+				if (stringMap[key] === undefined) return;
 				delete stringMap[key];
 			} else {
-				if (map[key] === undefined) return false;
+				if (map[key] === undefined) return;
 				delete map[key];
 			}
 			size--;
-			return true;
 		}
 
 	}

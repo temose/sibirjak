@@ -53,6 +53,12 @@ package com.sibirjak.asperform.collectiontests.polygonal {
 			}
 		}
 
+		public function test_first() : void {
+			for (var i : uint = 0; i < _numItems; i++) {
+				_heap.front;
+			}
+		}
+
 		public function test_iterate() : void {
 			for (var i : uint = 0; i < iterations; i++) {
 				var iterator : Iterator = _heap.getIterator();
