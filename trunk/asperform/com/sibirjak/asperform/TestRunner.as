@@ -14,7 +14,7 @@ package com.sibirjak.asperform {
 
 		private var _eventDispatcher : IEventDispatcher;
 
-		public var runsPerTest : uint = 1;
+		public var runsPerTest : uint = 5;
 
 		private var _timer : Timer;
 		private var _clock : Clock;
