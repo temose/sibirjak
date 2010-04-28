@@ -7,7 +7,10 @@
 
     <mx:Script>
         <![CDATA[
+        	import com.sibirjak.asperform.collectiontests.examples.*;
+
             private function startTests() : void {
+            	
             	
             	flexUI.setMethodKey("add", "+  ");
             	flexUI.setMethodKey("addFirst", "+A ");
@@ -23,7 +26,10 @@
             	flexUI.setMethodKey("hasKey", "?k ");
             	flexUI.setMethodKey("removeKey", "-k ");
 
-                flexUI.setTestSuite(new ArraySortedTests());
+                flexUI.setTestSuite(new LinkedListRawTests());
+                
+                
+                //flexUI.setTestSuite(new ArraySortedTests());
                 //flexUI.setTestSuite(new DictionaryTests());
                 //flexUI.setTestSuite(new ArrayTests());
 
