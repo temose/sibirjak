@@ -30,6 +30,7 @@ package com.sibirjak.asperform.collectiontests {
 			switch (methodName) {
 				case "has":
 				case "hasKey":
+				case "first":
 
 				case "remove":
 				case "removeFirst":

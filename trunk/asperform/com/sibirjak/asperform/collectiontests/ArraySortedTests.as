@@ -2,6 +2,7 @@ package com.sibirjak.asperform.collectiontests {
 	import com.sibirjak.asperform.EmptyTestCase;
 	import com.sibirjak.asperform.TestData;
 	import com.sibirjak.asperform.TestSuite;
+	import com.sibirjak.asperform.collectiontests.as3commons.AS3CommonsSortedListTest;
 	import com.sibirjak.asperform.collectiontests.flash.ArrayTest;
 
 	/**
@@ -10,28 +11,29 @@ package com.sibirjak.asperform.collectiontests {
 	public class ArraySortedTests extends TestSuite {
 		public function ArraySortedTests() {
 
-			selectTestMethods(["sorted"]);
+			setTestOrder(["add", "has", "remove"]);
+			selectTestMethods(["add", "has", "remove"]);
 
 			setTestProperty("testData", new TestData());
 
-			setTestProperty("numItems", 100);
+			setTestProperty("numItems", 5000);
 
-			addTestCase("100 Items", new EmptyTestCase());
+			addTestCase("5000 Items", new EmptyTestCase());
+			addTestCase("SortedList", new AS3CommonsSortedListTest());
 			addTestCase("Array", new ArrayTest());
 
-			setTestProperty("numItems", 500);
+			setTestProperty("numItems", 10000);
 
-			addTestCase("500 Items", new EmptyTestCase());
+			addTestCase("10000 Items", new EmptyTestCase());
+
+			addTestCase("SortedList", new AS3CommonsSortedListTest());
 			addTestCase("Array", new ArrayTest());
 
-			setTestProperty("numItems", 1000);
+			setTestProperty("numItems", 50000);
 
-			addTestCase("1000 Items", new EmptyTestCase());
-			addTestCase("Array", new ArrayTest());
+			addTestCase("50000 Items", new EmptyTestCase());
 
-			setTestProperty("numItems", 2000);
-
-			addTestCase("2000 Items", new EmptyTestCase());
+			addTestCase("SortedList", new AS3CommonsSortedListTest());
 			addTestCase("Array", new ArrayTest());
 
 		}

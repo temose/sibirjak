@@ -52,6 +52,12 @@ package com.sibirjak.asperform.collectiontests.as3commons {
 			}
 		}
 
+		public function test_first() : void {
+			for (var i : uint = 0; i < _numItems; i++) {
+				_treap.first;
+			}
+		}
+
 		public function test_iterate() : void {
 			for (var i : uint = 0; i < iterations; i++) {
 				var iterator : IIterator = _treap.iterator();
