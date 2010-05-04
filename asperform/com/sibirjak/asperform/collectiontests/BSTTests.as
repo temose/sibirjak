@@ -12,43 +12,48 @@ package com.sibirjak.asperform.collectiontests {
 	public class BSTTests extends TestSuite {
 		public function BSTTests() {
 
-			setTestOrder(["add", "has", "remove", "iterate"]);
-			selectTestMethods(["add", "has", "remove", "iterate"]);
+			setTestOrder(["add", "has", "remove"]);
+			selectTestMethods(["add", "has", "remove"]);
 
-			setTestProperty("testData", new TestData());
-			setTestProperty("numItems", 1000);
-
-			addTestCase("1000 Items", new EmptyTestCase());
-			addTestCase("Commons Treap", new AS3CommonsTreapTest());
-			addTestCase("Dpdk BST", new DpdkBinarySearchTreeTest());
-			addTestCase("Polygonal BST", new PolygonalBinarySearchTreeTest());
-
-			setTestProperty("numItems", 5000);
-
-			addTestCase("5000 Items", new EmptyTestCase());
-			addTestCase("Commons Treap", new AS3CommonsTreapTest());
-			addTestCase("Dpdk BST", new DpdkBinarySearchTreeTest());
-			addTestCase("Polygonal BST", new PolygonalBinarySearchTreeTest());
-
-			setTestProperty("numItems", 10000);
-
-			addTestCase("10000 Items", new EmptyTestCase());
-			addTestCase("Commons Treap", new AS3CommonsTreapTest());
-			addTestCase("Dpdk BST", new DpdkBinarySearchTreeTest());
-			addTestCase("Polygonal BST", new PolygonalBinarySearchTreeTest());
+//			setTestProperty("testData", new TestData());
+//			setTestProperty("numItems", 1000);
+//
+//			addTestCase("1000 Items", new EmptyTestCase());
+//			addTestCase("AS3Commons", new AS3CommonsTreapTest());
+//			addTestCase("Dpdk", new DpdkBinarySearchTreeTest());
+//			addTestCase("Polygonal", new PolygonalBinarySearchTreeTest());
+//
+//			setTestProperty("numItems", 5000);
+//
+//			addTestCase("5000 Items", new EmptyTestCase());
+//			addTestCase("AS3Commons", new AS3CommonsTreapTest());
+//			addTestCase("Dpdk", new DpdkBinarySearchTreeTest());
+//			addTestCase("Polygonal", new PolygonalBinarySearchTreeTest());
+//
+//			setTestProperty("numItems", 10000);
+//
+//			addTestCase("10000 Items", new EmptyTestCase());
+//			addTestCase("AS3Commons", new AS3CommonsTreapTest());
+//			addTestCase("Dpdk", new DpdkBinarySearchTreeTest());
+//			addTestCase("Polygonal", new PolygonalBinarySearchTreeTest());
 
 			setTestProperty("testData", new TestData(null, TestData.INSERTION_ORDER));
 			setTestProperty("numItems", 1000);
 
 			addTestCase("1000 Items sorted", new EmptyTestCase());
-			addTestCase("Commons Treap", new AS3CommonsTreapTest());
-			addTestCase("Dpdk BST", new DpdkBinarySearchTreeTest());
-			addTestCase("Polygonal BST", new PolygonalBinarySearchTreeTest());
+			addTestCase("AS3Commons", new AS3CommonsTreapTest());
+			addTestCase("Dpdk", new DpdkBinarySearchTreeTest());
+			addTestCase("Polygonal", new PolygonalBinarySearchTreeTest());
+
+			setTestProperty("numItems", 5000);
+
+			addTestCase("5000 Items sorted", new EmptyTestCase());
+			addTestCase("AS3Commons", new AS3CommonsTreapTest());
 
 			setTestProperty("numItems", 10000);
 
 			addTestCase("10000 Items sorted", new EmptyTestCase());
-			addTestCase("Commons Treap", new AS3CommonsTreapTest());
+			addTestCase("AS3Commons", new AS3CommonsTreapTest());
 
 		}
 	}
