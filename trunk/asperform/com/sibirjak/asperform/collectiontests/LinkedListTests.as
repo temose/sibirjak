@@ -12,30 +12,35 @@ package com.sibirjak.asperform.collectiontests {
 	public class LinkedListTests extends TestSuite {
 		public function LinkedListTests() {
 			
-			setTestOrder(["add", "has", "remove", "iterate", "addFirst", "addLast", "removeFirst", "removeLast"]);
-			selectTestMethods(["add", "has", "remove", "addFirst", "addLast", "removeFirst", "removeLast", "iterate"]);
+			setTestOrder(["addFirst", "addLast", "removeFirst", "removeLast"]);
+			selectTestMethods(["addFirst", "addLast", "removeFirst", "removeLast"]);
 			
 			setTestProperty("testData", new TestData());
 			setTestProperty("numItems", 5000);
 			
 			addTestCase("5000 Items", new EmptyTestCase());
-			addTestCase("Commons", new AS3CommonsLinkedListTest());
+			addTestCase("AS3Commons", new AS3CommonsLinkedListTest());
 			addTestCase("Dpdk", new DpdkLinkedListTest());
 			addTestCase("Polygonal", new PolygonalLinkedListTest());
 			
-			selectTestMethods(["add", "addFirst", "addLast", "removeFirst", "removeLast", "iterate"]);
+			setTestProperty("numItems", 10000);
+			
+			addTestCase("10000 Items", new EmptyTestCase());
+			addTestCase("AS3Commons", new AS3CommonsLinkedListTest());
+			addTestCase("Dpdk", new DpdkLinkedListTest());
+			addTestCase("Polygonal", new PolygonalLinkedListTest());
 			
 			setTestProperty("numItems", 50000);
 			
 			addTestCase("50000 Items", new EmptyTestCase());
-			addTestCase("Commons", new AS3CommonsLinkedListTest());
+			addTestCase("AS3Commons", new AS3CommonsLinkedListTest());
 			addTestCase("Dpdk", new DpdkLinkedListTest());
 			addTestCase("Polygonal", new PolygonalLinkedListTest());
 			
 			setTestProperty("numItems", 100000);
 			
 			addTestCase("100000 Items", new EmptyTestCase());
-			addTestCase("Commons", new AS3CommonsLinkedListTest());
+			addTestCase("AS3Commons", new AS3CommonsLinkedListTest());
 			addTestCase("Dpdk", new DpdkLinkedListTest());
 			addTestCase("Polygonal", new PolygonalLinkedListTest());
 

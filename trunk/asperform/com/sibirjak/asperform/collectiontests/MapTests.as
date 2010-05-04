@@ -19,23 +19,30 @@ package com.sibirjak.asperform.collectiontests {
 			setTestProperty("numItems", 5000);
 
 			addTestCase("5000 Items", new EmptyTestCase());
-			addTestCase("Commons Map", new AS3CommonsMapTest());
-			addTestCase("Dpdk Map", new DpdklMapTest()); // not working with 1000 items
-			addTestCase("Polygonal Map", new PolygonalMapTest());
+			addTestCase("AS3Commons", new AS3CommonsMapTest());
+			addTestCase("Dpdk", new DpdklMapTest()); // not working with 1000 items
+			addTestCase("Polygonal", new PolygonalMapTest());
+
+			setTestProperty("numItems", 10000);
+
+			addTestCase("10000 Items", new EmptyTestCase());
+			addTestCase("AS3Commons", new AS3CommonsMapTest());
+			addTestCase("Dpdk", new DpdklMapTest()); // not working with 1000 items
+			addTestCase("Polygonal", new PolygonalMapTest());
 
 			setTestProperty("numItems", 50000);
 
 			addTestCase("50000 Items", new EmptyTestCase());
-			addTestCase("Commons Map", new AS3CommonsMapTest());
-			addTestCase("Dpdk Map", new DpdklMapTest()); // not working with 1000 items
-			addTestCase("Polygonal Map", new PolygonalMapTest());
+			addTestCase("AS3Commons", new AS3CommonsMapTest());
+			addTestCase("Dpdk", new DpdklMapTest()); // not working with 1000 items
+			addTestCase("Polygonal", new PolygonalMapTest());
 
 			setTestProperty("numItems", 100000);
 
 			addTestCase("100000 Items", new EmptyTestCase());
-			addTestCase("Commons Map", new AS3CommonsMapTest());
-			addTestCase("Dpdk Map", new DpdklMapTest()); // not working with 1000 items
-			addTestCase("Polygonal Map", new PolygonalMapTest());
+			addTestCase("AS3Commons", new AS3CommonsMapTest());
+			addTestCase("Dpdk", new DpdklMapTest()); // not working with 1000 items
+			addTestCase("Polygonal", new PolygonalMapTest());
 
 		}
 	}

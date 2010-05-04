@@ -5,54 +5,59 @@
 	creationComplete="startTests()"
 	>
 
-    <mx:Script>
-        <![CDATA[
-        	import com.sibirjak.asperform.collectiontests.examples.*;
+	<mx:Script>
+		<![CDATA[
+			import com.sibirjak.asperform.collectiontests.examples.*;
 
-            private function startTests() : void {
-            	
-            	
-            	flexUI.setMethodKey("add", "+  ");
-            	flexUI.setMethodKey("addFirst", "+A ");
-            	flexUI.setMethodKey("addLast", "Z+ ");
-            	flexUI.setMethodKey("iterate", "for");
+			private function startTests() : void {
+				
+				
+				flexUI.setMethodKey("add", "+  ");
+				flexUI.setMethodKey("addFirst", "+A ");
+				flexUI.setMethodKey("addLast", "Z+ ");
+				flexUI.setMethodKey("iterate", "for");
+			
+				flexUI.setMethodKey("has", "?  ");
+				flexUI.setMethodKey("first", "->A");
+			
+				flexUI.setMethodKey("remove", "-  ");
+				flexUI.setMethodKey("removeFirst", "-A ");
+				flexUI.setMethodKey("removeLast", "Z- ");
+				
+				flexUI.setMethodKey("hasKey", "?k ");
+				flexUI.setMethodKey("removeKey", "-k ");
 
-            	flexUI.setMethodKey("has", "?  ");
-            	flexUI.setMethodKey("first", "->A");
+				//flexUI.setTestSuite(new SortedSetTests2());
+				//flexUI.setTestSuite(new SortedSetTests());
+				//flexUI.setTestSuite(new SortedMapTests());
+				//flexUI.setTestSuite(new OrderedSetRawTests2());
+				//flexUI.setTestSuite(new OrderedSetRawTests());
+				//flexUI.setTestSuite(new SetRawTests());
+				//flexUI.setTestSuite(new ArrayListTests());
+				//flexUI.setTestSuite(new OrderedMapRawTests());
+				//flexUI.setTestSuite(new HeapTests());
+				//flexUI.setTestSuite(new MapRawTests());
+				//flexUI.setTestSuite(new LinkedListRawTests());
+				
+				//flexUI.setTestSuite(new LinkedListTests());
+				//flexUI.setTestSuite(new MapTests());
+				//flexUI.setTestSuite(new SetTests());
+				flexUI.setTestSuite(new BSTTests());
+				//flexUI.setTestSuite(new PriorityQueueTests());
+				//flexUI.setTestSuite(new SortedListTests());
+				
+				//flexUI.setTestSuite(new TreapTests());
+				//flexUI.setTestSuite(new ArraySortedTests());
+				//flexUI.setTestSuite(new DictionaryTests());
+				//flexUI.setTestSuite(new ArrayTests());
+				
+				//flexUI.setTestSuite(new AS3CommonsVSAS3Tests());
+				//flexUI.setTestSuite(new AS3CommonsTests());
 
-            	flexUI.setMethodKey("remove", "-  ");
-            	flexUI.setMethodKey("removeFirst", "-A ");
-            	flexUI.setMethodKey("removeLast", "Z- ");
-            	
-            	flexUI.setMethodKey("hasKey", "?k ");
-            	flexUI.setMethodKey("removeKey", "-k ");
-
-                flexUI.setTestSuite(new OrderedSetRawTests());
-                //flexUI.setTestSuite(new SetRawTests());
-                //flexUI.setTestSuite(new ArrayListTests());
-                //flexUI.setTestSuite(new OrderedMapRawTests());
-                //flexUI.setTestSuite(new HeapTests());
-                //flexUI.setTestSuite(new MapRawTests());
-                //flexUI.setTestSuite(new LinkedListRawTests());
-                
-                
-                //flexUI.setTestSuite(new TreapTests());
-                //flexUI.setTestSuite(new ArraySortedTests());
-                //flexUI.setTestSuite(new DictionaryTests());
-                //flexUI.setTestSuite(new ArrayTests());
-
-                //flexUI.setTestSuite(new AS3CommonsVSAS3Tests());
-                //flexUI.setTestSuite(new AS3CommonsTests());
-                //flexUI.setTestSuite(new PriorityQueueTests());
-                //flexUI.setTestSuite(new LinkedListTests());
-                //flexUI.setTestSuite(new SetTests());
-                //flexUI.setTestSuite(new MapTests());
-                //flexUI.setTestSuite(new BSTTests());
-                
-                flexUI.startTests();
-            }
-        ]]>
-    </mx:Script>
+				flexUI.startTests();
+			}
+		]]>
+	</mx:Script>
 
 	<flexui:FlexUI id="flexUI" width="100%" height="100%"/>
 	
