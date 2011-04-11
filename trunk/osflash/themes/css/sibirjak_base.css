@@ -1,0 +1,239 @@
+/*****************************************************************************
+	Reset
+****************************************************************************/
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 13px;
+	line-height: 1;
+	letter-spacing: 0;
+	color: black;
+}
+
+ul, ol, p, table, body, h1, h2, h3, h4, h5, form {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+.clear {
+	clear: both;
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	border: none;
+}
+
+br.clear {
+	font-size: 0px;
+	height: 0;
+}
+
+/*****************************************************************************
+	Links
+****************************************************************************/
+
+a {
+	color: #3355CC;
+	color: #4466BB;
+	text-decoration: none;
+}
+
+.highlight_current_page_tree .current_page_tree > a,
+.highlight_current_page_item .current_page_item > a {
+	color: #CC0000;
+	color: #CC3300;
+}
+
+.highlight_current_page_tree.highlight_current_page_item .current_page_item > a {
+	color: #777777;
+}
+
+a:hover,
+.highlight_current_page_tree .current_page_tree > a:hover,
+.highlight_current_page_item .current_page_item > a:hover {
+	color: #3399FF;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover,
+.skip_underline_links a:hover {
+	text-decoration: none;
+}
+
+/*****************************************************************************
+	Forms
+****************************************************************************/
+
+input, textarea, button {
+	background: #FAFAFA;
+	border-style: solid;
+	border-width: 1px;
+	color: #444444;
+	font-size: 14px;
+	font-family: monospace;
+	padding: 0;
+}
+
+input, textarea {
+	border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+}
+
+input {
+	vertical-align: top;
+	height: 20px;
+	padding: 0 3px;
+}
+
+button {
+	border-color: #EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+	vertical-align: top;
+	height: 22px;
+}
+
+input:focus, textarea:focus {
+	background: #FFFFFF;
+}
+
+button:hover {
+	background: #FFFFFF;
+}
+
+/*****************************************************************************
+	Table
+****************************************************************************/
+	
+.simple_table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: left;
+	line-height: 1.1em;
+	font-size: 12px;
+	font-family: monospace, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.simple_table td {
+	border: 1px solid #CCCCCC;
+	padding: 3px 6px;
+	vertical-align: top;
+}
+
+.simple_table th {
+	border: 1px solid #CCCCCC;
+	background-color: #DDDDDD;
+	padding: 6px 6px;
+	font-size: 1.1em;
+}
+
+.simple_table tr.heading {
+	background-color: #EEEEEE;
+}
+
+.simple_table .st_border_top td {
+	border-top: 3px solid #CCCCCC;
+}
+
+/****************************************************************************
+	WP Syntax
+****************************************************************************/
+
+.wp_syntax {
+	background-color: #FAFAFA !important;
+	border: 1px dotted #DDDDDD !important;
+	width: auto !important;
+	margin-bottom: 0 !important;
+}
+
+.wp_syntax .line_numbers {
+	color: #444444 !important;
+}
+
+.wp_syntax div, .wp_syntax pre, .wp_syntax span {
+	margin-left: 0 !important;
+	letter-spacing: 0;
+	line-height: 14px !important;
+	font-size: 11px !important;
+}
+
+.wp_syntax div {
+	padding: 0px 4px !important;
+}
+
+.wp_syntax td.code > div {
+	white-space: nowrap;
+}
+
+/****************************************************************************
+	Navigation
+****************************************************************************/
+
+.navigation_list ul, .navigation_list ol {
+	list-style-type: none;
+}
+
+/****************************************************************************
+	Next Previous Navigation
+****************************************************************************/
+
+.next_previous_navigation {
+	color: #666666;
+}
+
+/****************************************************************************
+	Article Navigation
+****************************************************************************/
+
+.article_navigation li:hover {
+	background-color: #F6F6F6;
+	background-color: #FAFAFA;
+	background-color: #EEEEEE;
+	background-color: #E9E9E9;
+}
+
+.article_navigation li > a {
+	color: #555555;
+}
+
+.article_navigation li > a:hover {
+	color: #999999;
+	color: black;
+}
+
+.article_navigation a.meta-link {
+	color: #AAAAAA;
+}
+
+/****************************************************************************
+	Path navigation
+****************************************************************************/
+
+.path_navigation {
+	font-family: Verdana;
+}
+
+.path_navigation a {
+	display: inline;
+	font-variant: small-caps;
+	vertical-align: bottom;
+	font-size: 12px;
+}
+
+.path_navigation .raquo {
+	color: #999999;
+	font-size: 14px;
+	margin: 0 4px;
+}
+
+.path_navigation .raquo:first-child {
+	margin-left: 0;
+}
