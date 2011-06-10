@@ -9,6 +9,7 @@
 		<h2>Projects</h2>
 
 		<ul>
+			<li><?php sibirjak_link(get_permalink(1866), 'LifeCycle & Invalidation - AS3Commons UI'); ?></li>
 			<li><?php sibirjak_link(get_permalink(41), 'AS3Commons Collections'); ?></li>
 			<li><?php sibirjak_link(get_permalink(342), 'AS DataProvider Controls'); ?></li>
 		</ul>

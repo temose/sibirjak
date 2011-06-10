@@ -5,6 +5,7 @@
 		var $post;
 		var $svnSrcUrl = "";
 		var $svnBrowseUrl = "";
+		var $svnCodeUrl = "";
 		var $examples = array();
 		var $expandedExamples = array();
 		var $categories = array();
@@ -27,6 +28,7 @@
 		}
 		
 		function ExamplePage($post) {
+			
 			$this->post = $post;
 			
 			$this->parseExamples();
@@ -39,7 +41,7 @@
 			
 			$this->post->post_content = $this->navigationHTML . $this->expandedExamplesHTML . $this->post->post_content;
 			
-			$this->post->post_content = '<div id="examples">' . $this->post->post_content . '</div';
+			$this->post->post_content = '<div id="examples">' . $this->post->post_content . '</div>';
 		}
 
 		private function replaceExampleTags() {
@@ -120,7 +122,8 @@
 					$urls = preg_split('/,\s+/', $example['url']);
 					foreach ($urls as $url) {
 						$fileName = preg_replace('/.+\\//', '', $url);
-						$listings[] = array($fileName, $url, file_get_contents($this->svnSrcUrl . $url));
+						$host = $this->svnCodeUrl ? $this->svnCodeUrl : $this->svnSrcUrl;
+						$listings[] = array($fileName, $url, file_get_contents($host . $url));
 					}
 				}
 				
@@ -147,8 +150,8 @@
 			// init repository
 
 			$this->post->post_content = preg_replace_callback(
-				"/  \[SVN  .*?  src_url=\"  (.*?)  \"  .*?  browse_url=\"  (.*?)  \"  .*?  \/\] /sx",
-				array($this, 'replaceSVNTagCallback'),
+				"/  \[SVN  .*?  src_url=\"  (.*?)  \"  .*?  browse_url=\"  (.*?)  \"  .*? (?:code_url=\"  (.*?)  \"  .*?)?  \/\] /sx",
+			array($this, 'replaceSVNTagCallback'),
 				$this->post->post_content
 			);
 			
@@ -285,6 +288,7 @@
 		private function replaceSVNTagCallback($result) {
 			$this->svnSrcUrl = $result[1];
 			$this->svnBrowseUrl = $result[2];
+			$this->svnCodeUrl = $result[3];
 			return '';
 		}
 

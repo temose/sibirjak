@@ -20,7 +20,7 @@
 
 	<?php if (sizeof($listings)) {
 		foreach ($listings as $listing) { ?>
-			<div class="example_meta"><?php echo $listing[0]; ?>: <a href="<?php echo $svnSrcUrl . $listing[1]; ?>">Source raw</a>, <a href="<?php echo $svnBrowseUrl . $listing[1]; ?>">SVN browser</a></div>
+			<div class="example_meta"><?php echo $listing[0]; ?>: <a href="<?php echo $svnSrcUrl . $listing[1]; ?>">Source raw</a>, <a href="<?php echo $svnBrowseUrl . $listing[1]; ?>">Source highlighted</a></div>
 			<pre lang="actionscript3" line="1"><?php echo $listing[2]; ?></pre>
 		<?php }
 	} ?>

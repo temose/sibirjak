@@ -14,12 +14,13 @@
 		'/collections/as3commons-collections' => 'projects/as3commons-collections/documentation',
 		'/collections/why-we-need-a-collection-framework-in-actionscript' => 'blog/why-we-need-a-collection-framework-in-actionscript/',
 		'/collections/collections-framework-performance-comparision' => 'blog/collections-framework-performance-comparision/',
-		'/collections/array-dictionary-collections-performace-functionality-reliability' => 'blog/array-dictionary-collections-performace-functionality-reliability/',
+		'/collections/array-dictionary-collections-performace-functionality-reliability' => 'blog/array-dictionary-collections-performance-functionality-reliability/',
+		'/collections/array-dictionary-collections-performance-functionality-reliability' => 'blog/array-dictionary-collections-performance-functionality-reliability/',
 	
 		'/jakute/announcement-jakute-flash-a-complete-styling-engine' => 'blog/announcement-jakute-flash-a-complete-styling-engine/',
 	);
 	
-	$location = '404/' . $_SERVER['REQUEST_URI'];
+	$location = '404' . $_SERVER['REQUEST_URI'];
 	
 	if (preg_match("/\/blog\/(wp-content\/uploads.*)/", $_SERVER['REQUEST_URI'], $result)) {
 		$location = $result[1];
