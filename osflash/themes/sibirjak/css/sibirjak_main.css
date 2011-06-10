@@ -254,6 +254,12 @@
 	margin-top: 5px;
 }
 
+#main .article .example_meta + object + p.caption {
+	margin-top: 4px;
+	font-size: 11px;
+	color: #999999;
+}
+
 /*******************************
 	Special formats
 *******************************/
@@ -295,4 +301,10 @@
 	display: inline;
 }
 
+/*******************************
+	Sitemap
+*******************************/
+#main .ddsg-wrapper > div {
+	margin-top: 20px;
+}
 

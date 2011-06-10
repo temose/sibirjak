@@ -156,8 +156,9 @@
 						<?php if (sibirjak_is_jakute()) : ?>
 							<div id="download_jakute">
 								<?php sibirjak_jakute_version(); ?>
-								<a href="http://jakute-styling-engine.googlecode.com/files/<?php sibirjak_jakute_version(); ?>.zip">ZIP</a>
-								<a href="http://jakute-styling-engine.googlecode.com/files/<?php sibirjak_jakute_version(); ?>.swc">SWC</a>
+								
+								<a href="https://github.com/kakenbok/Jakute-Styling-Engine/downloads">ZIP</a>
+								<a href="https://github.com/kakenbok/Jakute-Styling-Engine/downloads">SWC</a>
 							</div>
 						<?php endif; ?>
 

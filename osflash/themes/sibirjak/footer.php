@@ -36,6 +36,8 @@
 	</div>
 	<!-- END #container -->
 
+	<?php wp_footer(); ?>
+	
 </body>
 
 <?php include (TEMPLATEPATH . '/includes/htmlfoot.inc.php'); ?>
