@@ -23,6 +23,11 @@
 				</ul>
 	
 				<ul>
+					<li><img src="<?php echo SBJ_IMAGES; ?>twitter_sidebar.png" title="Follow me on Twitter" alt="Follow me on Twitter" /></li>
+					<li><a href="http://twitter.com/kakenbok">Follow me on Twitter</a></li>
+				</ul>
+	
+				<ul>
 					<li><img src="<?php echo SBJ_IMAGES; ?>feed.png" title="RSS" alt="RSS" /> RSS</li>
 					<li><a href="<?php bloginfo( 'rss2_url' ); ?>" title="<?php echo wp_specialchars( get_bloginfo( 'name' ), 1 ) ?> Posts RSS feed" rel="alternate" type="application/rss+xml">All posts</a></li>
 					<li><a href="<?php bloginfo( 'comments_rss2_url' ); ?>" title="<?php echo wp_specialchars( bloginfo( 'name' ), 1 ) ?> Comments RSS feed" rel="alternate" type="application/rss+xml">All comments</a></li>
