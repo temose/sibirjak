@@ -45,3 +45,8 @@ window.onmousewheel = document.onmousewheel = onMouseWheel;
 function popup(url, width, height) {
 	window.open(url, 'popup', 'scrollbars=auto,resizable=no,width=' + width + 'px,height=' + height + 'px');
 }
+
+function showHide(id) {
+	var element = document.getElementById(id);
+	element.style.display = element.style.display == "block" ? "none" : "block";
+}
