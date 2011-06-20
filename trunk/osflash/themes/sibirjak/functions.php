@@ -12,8 +12,9 @@
 	 * Init
 	 */
 
-	require_once(TEMPLATEPATH . '/classes/ArticleNavigation.php');
+	require_once(TEMPLATEPATH . '/classes/DownloadWidget.php');
 	require_once(TEMPLATEPATH . '/classes/ExamplePage.php');
+	require_once(TEMPLATEPATH . '/classes/ArticleNavigation.php');
 	
 	add_action('wp_head', 'sibirjak_init');
 
@@ -25,6 +26,10 @@
 			// Donate tag before article navigation and example swf shorttag replacer
 			sibirjak_replace_donate_tag($post);
 
+			// replace download tags
+			
+			sibirjak_replace_download_tags($post);
+			
 			// Example code before article navigation and example swf shorttag replacer
 			
 			if (get_post_meta($post->ID, 'sibirjak_pagetype', true) == 'example') {
@@ -81,6 +86,14 @@
 		return $link;
 	}
 	
+	/*
+	 * Downloads
+	 */
+
+	function sibirjak_replace_download_tags($post) {
+		new DownloadWidget($post);
+	}
+
 	/*
 	 * Code examples
 	 */
@@ -557,6 +570,10 @@
 			$currentPage = get_page($wp_query->get_queried_object_id());
 			
 			foreach ($pages as $tmpPage) {
+				
+				if ($tmpPage->post_title == "Downloads") continue;
+				
+				
 				if ($tmpPage->ID == $currentPage->ID) echo '<li class="current_page_item">';
 				else if ($tmpPage->ID == $currentPage->post_parent) echo '<li class="current_page_tree">';
 				else echo '<li>';

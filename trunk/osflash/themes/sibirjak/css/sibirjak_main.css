@@ -308,3 +308,35 @@
 	margin-top: 20px;
 }
 
+/*******************************
+	Download section
+*******************************/
+#main .article .download_category {
+	margin-top: 5px;
+}
+
+#main .article .download_category_old {
+	display: none;
+    margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#main .article .download {
+	margin-top: 15px;
+}
+#main .article .download_error,
+#main .article .download_error a{
+	margin-top: 5px;
+	color: #FF0000;
+}
+
+#main .article .download_meta {
+	margin-top: 5px;
+	color: #666666;
+}
+
+#main .article .download_description {
+	margin-top: 5px;
+	color: #888888;
+}
+
