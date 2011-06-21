@@ -115,16 +115,6 @@
 					</div>
 				<?php endif; ?>
 				
-				<?php if (0 && is_singular()) : ?>
-					<div id="addthis" class="addthis_toolbox addthis_16x16_style addthis_default_style">
-					    <a class="addthis_button_facebook"></a>
-					    <a class="addthis_button_twitter"></a>
-					    <a class="addthis_button_google"></a><br />
-					    <a class="addthis_button_delicious"></a><br />
-					</div>
-	            	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=kakenbok"></script>
-	            <?php endif;?>
-	            
 				<div id="headline" class="highlight_current_page_item">
 					<h1 class="current_page_item">
 						<?php sibirjak_show_headline(); ?>

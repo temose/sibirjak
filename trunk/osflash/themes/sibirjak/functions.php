@@ -17,7 +17,8 @@
 	require_once(TEMPLATEPATH . '/classes/ArticleNavigation.php');
 	
 	add_action('wp_head', 'sibirjak_init');
-
+	add_action('sdmon_download_error', 'sibirjak_download_error');
+	
 	function sibirjak_init() {
 		if (is_singular()) {
 			global $wp_query;
@@ -92,6 +93,16 @@
 
 	function sibirjak_replace_download_tags($post) {
 		new DownloadWidget($post);
+	}
+
+	function sibirjak_download_error() {
+		global $wp_query;
+		$wp_query->is_404 = true;
+		header( "HTTP/1.1 404 Not found", true, 404 );
+		get_header();
+		include(TEMPLATEPATH . '/includes/sibirjak_show_download_404.inc.php');
+		get_footer();
+		exit;
 	}
 
 	/*

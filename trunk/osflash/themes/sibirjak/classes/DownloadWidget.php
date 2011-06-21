@@ -80,7 +80,7 @@
 
 		private function parse_downloads($result) {
 			$downLoadHTML = preg_replace_callback(
-				"/  \[Download  .*?  file=\"(.+?)\"  .*?  date=\"(.+?)\"  .*?  description=\"(.+?)\"  .*?  \/\]  /sx",
+				"/  \[Download  .*?  file=\"(.+?)\"  .*?  date=\"(.+?)\"  .*?  description=\"(.*?)\"  .*?  \/\]  /sx",
 				array($this, 'replace_downloads'),
 				$result
 			);
@@ -106,7 +106,7 @@
 				$url = get_bloginfo("url") . '/downloads/' . $this->currentDir . '/' . $result[1];
 	
 				$download .= '<div class="download"><a href="' . $url . '">' . $result[1] . '</a></div>';
-				$download .= '<div class="download_description">' . $result[3] . '</div>';
+				if ($result[3]) $download .= '<div class="download_description">' . $result[3] . '</div>';
 				$download .= '<div class="download_meta">Date: ' . $result[2] . ' | Size: ' . $size . ' | Downloads: ' . $downloads . '</div>';
 				
 			} else {
