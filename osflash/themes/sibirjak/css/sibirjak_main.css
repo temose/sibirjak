@@ -297,8 +297,8 @@
 	border: none;
 }
 
-#main #paypal {
-	display: inline;
+#main #donate #paypal {
+	margin-top: 10px;
 }
 
 /*******************************
