@@ -542,19 +542,18 @@
 	Download Jakute Button
 ***************************************/
 
-#download_jakute {
+#download_button {
 	background-color: white;
-	padding-left: 34px;
-	padding-top: 22px;
+	padding-left: 12px;
+	padding-top: 40px;
 	padding-bottom: 30px;
 	color: #E7E7E7;
-	background: url("../images/download_button.png") no-repeat white;
+	background: url("../images/download_button2.png") no-repeat white;
 	font-family: Verdana;
 	font-size: 11px;
 }
 
-#download_jakute a {
-	color: #000099;
+#download_button a {
 	color: #E7E7E7;
 	text-decoration: underline;
 }

@@ -13,6 +13,7 @@
 	 */
 
 	require_once(TEMPLATEPATH . '/classes/DownloadWidget.php');
+	require_once(TEMPLATEPATH . '/classes/DownloadButton.php');
 	require_once(TEMPLATEPATH . '/classes/ExamplePage.php');
 	require_once(TEMPLATEPATH . '/classes/ArticleNavigation.php');
 	
@@ -735,33 +736,16 @@
 	}
 
 	/*
-	 * Check for the Jakute project
+	 * Download button
 	 */
 
-	function sibirjak_is_jakute() {
-		if (is_page()) {
-			global $wp_query;
-			$page = get_post($wp_query->get_queried_object_id());
-			
-			if (sizeof($page->ancestors) > 1) {
-				$page = get_post($page->ancestors[sizeof($page->ancestors) - 2]);
-			}
-			
-			return $page->ID == 945;
-
-		} else if (is_single()) {
-			$categories = get_the_category();
-			return $categories[0]->cat_ID == 6;
-			
-		} else if (is_category()) {
-			$categories = get_the_category();
-			return $categories[0]->cat_ID == 6;
-		}
-
-		return false;
+	function sibirjak_has_download_button() {
+		$button = DownloadButton::getInstance();
+		return $button->hasButton();
 	}
-	
-	function sibirjak_jakute_version() {
-		echo get_post_meta(945, 'jakute_version', true);
+
+	function sibirjak_download_button() {
+		echo DownloadButton::getInstance()->buttonHTML();
 	}
+		
 	
