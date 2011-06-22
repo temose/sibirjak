@@ -582,10 +582,6 @@
 			$currentPage = get_page($wp_query->get_queried_object_id());
 			
 			foreach ($pages as $tmpPage) {
-				
-				if ($tmpPage->post_title == "Downloads") continue;
-				
-				
 				if ($tmpPage->ID == $currentPage->ID) echo '<li class="current_page_item">';
 				else if ($tmpPage->ID == $currentPage->post_parent) echo '<li class="current_page_tree">';
 				else echo '<li>';
