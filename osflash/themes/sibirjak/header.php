@@ -144,18 +144,11 @@
 	
 			<div class="content">
 	
-				<?php if (sibirjak_has_article_navigation() || sibirjak_is_jakute()) : ?>
+				<?php if (sibirjak_has_article_navigation() || sibirjak_has_download_button()) : ?>
 				
 					<div id="article_navigation_container">
 						
-						<?php if (sibirjak_is_jakute()) : ?>
-							<div id="download_jakute">
-								<?php sibirjak_jakute_version(); ?>
-								
-								<a href="https://github.com/kakenbok/Jakute-Styling-Engine/downloads">ZIP</a>
-								<a href="https://github.com/kakenbok/Jakute-Styling-Engine/downloads">SWC</a>
-							</div>
-						<?php endif; ?>
+						<?php sibirjak_download_button(); ?>
 
 						<?php if (sibirjak_has_article_navigation()) : ?>
 							<div id="article_navigation" class="navigation_list article_navigation skip_underline_links highlight_current_page_tree highlight_current_page_item">
