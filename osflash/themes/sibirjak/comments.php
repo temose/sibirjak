@@ -25,6 +25,8 @@
 		
 		    <h2 class="comments_headline">Leave a Comment</h2> 
 		    
+		    <div class="comments_forum">You have a question or have experienced an issue? Please post it in the forum: <a href="https://sibirjak.tenderapp.com/discussions/">http://sibirjak.tenderapp.com/</a> in order to make the discussion available at a more central place.</div>
+		    
 		    <!--BEGIN #comment-form-->
 			<form id="comment-form" method="post" action="<?php echo get_option( 'siteurl' ); ?>/wp-comments-post.php">
 				<?php if ( is_user_logged_in() ) : global $current_user; // If user is logged-in, then show them their identity ?>
