@@ -502,6 +502,13 @@
 	color: #444444;
 }
 
+#respond .comments_forum {
+	color: #444444;
+	line-height: 1.4;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
 /***************************************
 	Bottom
 ***************************************/
