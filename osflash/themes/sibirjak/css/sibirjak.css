@@ -452,6 +452,7 @@
 }
 
 .comment-content p {
+	margin: 15px 0;
 	color: #666666;
 	line-height: 1.4;
 	font-size: 12px;
