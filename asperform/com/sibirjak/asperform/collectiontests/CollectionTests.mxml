@@ -7,8 +7,6 @@
 
 	<mx:Script>
 		<![CDATA[
-			import com.sibirjak.asperform.collectiontests.examples.*;
-
 			private function startTests() : void {
 				
 				
@@ -37,12 +35,13 @@
 				//flexUI.setTestSuite(new OrderedMapRawTests());
 				//flexUI.setTestSuite(new HeapTests());
 				//flexUI.setTestSuite(new MapRawTests());
-				//flexUI.setTestSuite(new LinkedListRawTests());
+//				flexUI.setTestSuite(new LinkedListRawTests());
 				
-				//flexUI.setTestSuite(new LinkedListTests());
+//				flexUI.setTestSuite(new LinkedListTests());
+				flexUI.setTestSuite(new JDLinkedListTests());
 				//flexUI.setTestSuite(new MapTests());
 				//flexUI.setTestSuite(new SetTests());
-				flexUI.setTestSuite(new BSTTests());
+//				flexUI.setTestSuite(new BSTTests());
 				//flexUI.setTestSuite(new PriorityQueueTests());
 				//flexUI.setTestSuite(new SortedListTests());
 				
