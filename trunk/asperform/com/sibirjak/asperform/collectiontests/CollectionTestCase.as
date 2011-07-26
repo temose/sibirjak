@@ -31,6 +31,7 @@ package com.sibirjak.asperform.collectiontests {
 				case "has":
 				case "hasKey":
 				case "first":
+				case "sort":
 
 				case "remove":
 				case "removeFirst":

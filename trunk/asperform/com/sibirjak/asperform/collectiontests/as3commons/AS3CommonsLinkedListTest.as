@@ -1,8 +1,10 @@
 package com.sibirjak.asperform.collectiontests.as3commons {
+
 	import com.sibirjak.asperform.collectiontests.CollectionTestCase;
 
 	import org.as3commons.collections.LinkedList;
 	import org.as3commons.collections.framework.IIterator;
+	import org.as3commons.collections.utils.NumericComparator;
 
 	/**
 	 * @author jes 25.03.2010
@@ -89,6 +91,10 @@ package com.sibirjak.asperform.collectiontests.as3commons {
 			for (var i : uint = 0; i < _numItems; i++) {
 				_list.removeLast();
 			}
+		}
+
+		public function test_sort() : void {
+			_list.sort(new NumericComparator());
 		}
 
 	}
