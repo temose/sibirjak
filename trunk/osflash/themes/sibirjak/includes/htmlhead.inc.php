@@ -24,6 +24,8 @@
 
 	<?php wp_head(); ?>
 
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
