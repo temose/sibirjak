@@ -96,7 +96,8 @@
 					); ?>
 					<br />
 
-					<a class="FlattrButton" style="display:none;" href="http://sibirjak.com/osflash/"></a>
+					<g:plusone size="tall"></g:plusone><br />
+					<!-- <a class="FlattrButton" style="display:none;" href="http://sibirjak.com/osflash/"></a>-->
 				</div>
 			<?php endif; ?>
 	

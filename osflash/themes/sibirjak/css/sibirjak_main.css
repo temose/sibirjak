@@ -293,12 +293,8 @@
 	Donate section
 *******************************/
 #main #donate img, #donate input {
-	background: none;
-	border: none;
-}
-
-#main #donate #paypal {
-	margin-top: 10px;
+	sbackground: none;
+	sborder: none;
 }
 
 /*******************************

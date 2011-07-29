@@ -194,6 +194,11 @@
 	margin-top: 10px;
 }
 
+#addthis #___plusone_0 {
+	margin-top: 20px !important;
+	swidth: 70px !important;
+}
+
 /****************************************
 	Path Navigation
 ****************************************/
