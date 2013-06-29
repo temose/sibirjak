@@ -92,7 +92,7 @@
 						'Currently reading a blog post titled %title% - %url%',
 						'',
 						'default=off&delicious=on&twitter=on&facebook=on&googlebookmarks=on'
-						. '&iconfolder=images/bookmarks'
+						. '&iconfolder=themes/sibirjak/images/bookmarks'
 					); ?>
 					<br />
 
